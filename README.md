@@ -76,4 +76,6 @@ CSS
 
 WIREFRAMES:
 -----------
-![WIREFRAME] (https://i.imgur.com/TrMXlNY.jpg)
+[wireframe]:https://i.imgur.com/TrMXlNY.jpg
+
+![picture][wireframe]

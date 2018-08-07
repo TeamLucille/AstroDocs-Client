@@ -46,7 +46,7 @@ VISITOR STORIES:
 As a non-authorized visitor I need to be able to download files that are available so that I can download them to work on them/view them locally. 
 - As a non-authorized visitor to File Bucket I need to be able to search files by tag or by user so I can find specific files. 
 
-PROJECT REQUIERMENTS:
+PROJECT REQUIREMENTS:
 ---------------------
 - Host on your public Github page, not Github  Enterprise.
 - Deploy client application on GH pages
@@ -56,3 +56,24 @@ PROJECT REQUIERMENTS:
 - At least 1 commit every day during project week (not necessarily on both repos).
 - All repositories must have commits from every team member.
 - When pairing, include each developer's name in the commit message.
+
+TECH USED:
+----------
+HTML
+CSS/SCSS
+BOOTSTRAP
+JAVASCRIPT 
+JQUERY
+AJX REQUESTS
+API CONNECTIVITIY
+
+WHATS LEFT:
+-----------
+Working on API web requests
+Working on CRUD requests for Autheticated users
+HTML 
+CSS
+
+WIREFRAMES:
+-----------
+[WIREFRAME:] https://i.imgur.com/TrMXlNY.jpg

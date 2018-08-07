@@ -15,7 +15,7 @@ Build an app for your client, Xobpord, that allows users to upload files into a 
 
 USER STORIES:
 --------------
-- As a visitor to FileBucket I need to know how to sign up so that I can become an Owner and sign in(using email, password, and password confirmation)
+- As a visitor to AstroDocs I need to know how to sign up so that I can become an Owner and sign in(using email, password, and password confirmation)
 
 - As an owner I need to be able to log in with email and password so that only I will have the ability to create, update, and delete files.  
 
@@ -42,9 +42,9 @@ tags
 
 VISITOR STORIES:
 ----------------
-- As a non-authorized visitor to File Bucket I need to be able to browse recent/ all uploaded files so that I can view them.
-As a non-authorized visitor I need to be able to download files that are available so that I can download them to work on them/view them locally. 
-- As a non-authorized visitor to File Bucket I need to be able to search files by tag or by user so I can find specific files. 
+- As a non-authorized visitor to AstroDocs I need to be able to browse recent/ all uploaded files so that I can view them.
+- As a non-authorized visitor I need to be able to download files that are available so that I can download them to work on them/view them locally. 
+- As a non-authorized visitor to Astro Docs I need to be able to search files by tag or by user so I can find specific files. 
 
 PROJECT REQUIREMENTS:
 ---------------------
@@ -59,13 +59,13 @@ PROJECT REQUIREMENTS:
 
 TECH USED:
 ----------
-HTML
-CSS/SCSS
-BOOTSTRAP
-JAVASCRIPT 
-JQUERY
-AJX REQUESTS
-API CONNECTIVITIY
+- HTML
+- CSS/SCSS
+- BOOTSTRAP
+- JAVASCRIPT 
+- JQUERY
+- AJX REQUESTS
+- API CONNECTIVITIY
 
 WHATS LEFT:
 -----------
@@ -76,4 +76,6 @@ CSS
 
 WIREFRAMES:
 -----------
-[WIREFRAME:] https://i.imgur.com/TrMXlNY.jpg
+[wireframe]:https://i.imgur.com/TrMXlNY.jpg
+
+![picture][wireframe]

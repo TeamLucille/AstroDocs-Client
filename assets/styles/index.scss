@@ -1,2 +1,47 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Nova+Square|Roboto');
+
+// Color mixes…
+$thirty-percent-gray: #b3b3b3;
+$fifty-percent-gray: #7f7f7f;
+$black: #000;
+$white: #fff;
+$red: #f00;
+$green: #0f0;
+$blue: #00f;
+$cyan: #0ff;
+$magenta: #f0f;
+$yellow: #ff0;
+
+.modal-title {
+  color: $fifty-percent-gray;
+  font-family: 'Nova Square', sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  pointer-events: none;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+
+  &.modal-title-green {
+    color: $green;
+  }
+
+  &.modal-title-red {
+    color: $red;
+  }
+}
+
+input { // form input fields
+  color: $black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 2% 5%;
+  width: 90%;
+}
+
+.modal-content {
+  padding: 3%;
+}

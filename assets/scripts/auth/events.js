@@ -46,6 +46,7 @@ const addAuthHandlers = () => {
   $('#sign-in').on('submit', onSignIn)
   $('#change-password').on('submit', onChangePassword)
   $('#nav-sign-out').on('click', onSignOut)
+  $('.nav-bar').hide()
 }
 
 module.exports = {

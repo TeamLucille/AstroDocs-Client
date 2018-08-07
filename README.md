@@ -6,24 +6,24 @@ ASTRODOCS
 
 Overview:
 ----------
-Build an app for your client, Xobpord, that allows users to upload files into a virtual file system. Ordinary users can only read/download a file where as Owners can do anything to the files they own. In addition to keeping track of the file structure, this app should associate meta-data with each file, including things like:
+Build an app that allows users to upload files into a virtual file system. Ordinary users can only read/download a file where as Owners can do anything to the files they own. In addition to keeping track of the file structure, this app should associate meta-data with each file, including things like:
 
     - Date created/uploaded
     - Date modified
     - Owner (user who uploaded the file)
     - Tags
 
-USER STORIES:
+USER STORIES: OWNER
 --------------
-- As a visitor to AstroDocs I need to know how to sign up so that I can become an Owner and sign in (using email, password, and password confirmation)
+- As Visitor to AstroDocs I need to know how to sign up so that I can become an Owner and sign in (using email, password, and password confirmation)
 
-- As an owner I need to be able to log in with email and password so that only I will have the ability to create, update, and delete files.  
+- As an Owner I need to be able to log in with email and password so that only I will have the ability to create, update, and delete files.  
 
-- As an owner I need to be able to change my my password so that I can pick a new one if I would like.  
+- As an Owner I need to be able to change my my password so that I can pick a new one if I would like.  
 
-- As an owner I need to be able to get feedback from the website after after each action's success or failure.
+- As an Owner I need to be able to get feedback from the website after after each action's success or failure.
 
-- As an owner I need all forms to clear after submitting (either success or failure) so that I can resubmit forms as needed.  
+- As an Owner I need all forms to clear after submitting (either success or failure) so that I can resubmit forms as needed.  
 
 - As a signed-in Owner I need to know what my options are so that I can work with my files.  Create files, Update files must be able to view my files single / many
 
@@ -34,14 +34,14 @@ USER STORIES:
 - The app should keep track of :
 date created/uploaded,
 date modified,
-owner (user who uploaded the file),
+Owner (user who uploaded the file),
 tags.
 
-VISITOR STORIES:
+USER STORIES: VISTOR
 ----------------
-- As a non-authorized visitor to AstroDocs I need to be able to browse recent/ all uploaded files so that I can view them.
-- As a non-authorized visitor I need to be able to download files that are available so that I can download them to work on them/view them locally. 
-- As a non-authorized visitor to Astro Docs I need to be able to search files by tag or by user so I can find specific files. 
+- As a non-authorized Visitor to AstroDocs I need to be able to browse recent/ all uploaded files so that I can view them.
+- As a non-authorized Visitor I need to be able to download files that are available so that I can download them to work on them/view them locally. 
+- As a non-authorized Visitor to Astro Docs I need to be able to search files by tag or by user so I can find specific files. 
 
 PROJECT REQUIREMENTS:
 ---------------------
@@ -61,8 +61,8 @@ TECH USED:
 - BOOTSTRAP
 - JAVASCRIPT 
 - JQUERY
-- AJX REQUESTS
-- API CONNECTIVITIY
+- AJAX REQUESTS
+- API CONNECTIVITY
 
 WHATS LEFT:
 -----------

@@ -1,0 +1,42 @@
+{{#each files as |file|}}
+  {{log file}}
+  <!-- {{> partial}} -->
+
+  <tr data-id="{{file.id}}"
+  data-user="{{file.user}}"
+  data-file-name="{{file.file_name}}"
+    data-date="{{file.date}}"
+    data-tags="{{file.tags}}"
+    data-toggle="modal" data-target="#modifyFileModal">
+    <td class="user-td">
+      {{#if file.user}}
+      {{file.user}}
+      {{else}}
+      —
+      {{/if}}
+    </td>
+    <td class="file-name-td">
+      {{#if file.file_name}}
+      {{file.file_name}}
+      {{else}}
+      —
+      {{/if}}
+    </td>
+    <td class="date-td">
+      {{#if file.date}}
+        {{file.date}}
+      {{else}}
+        —
+      {{/if}}
+    </td>
+    <td class="tags-td">
+      {{#if file.tags}}
+        {{file.tags}}
+      {{else}}
+        —
+      {{/if}}
+    </td>
+    <td class="info-button-td"><button type="button" class="modify-file-button" id="modify-file-button">Modify</button></td>
+  </tr>
+
+{{/each}}

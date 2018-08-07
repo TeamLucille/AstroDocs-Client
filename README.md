@@ -15,7 +15,7 @@ Build an app for your client, Xobpord, that allows users to upload files into a 
 
 USER STORIES:
 --------------
-- As a visitor to AstroDocs I need to know how to sign up so that I can become an Owner and sign in(using email, password, and password confirmation)
+- As a visitor to AstroDocs I need to know how to sign up so that I can become an Owner and sign in (using email, password, and password confirmation)
 
 - As an owner I need to be able to log in with email and password so that only I will have the ability to create, update, and delete files.  
 
@@ -25,20 +25,17 @@ USER STORIES:
 
 - As an owner I need all forms to clear after submitting (either success or failure) so that I can resubmit forms as needed.  
 
-- As a signed-in Owner I need to know what my options are so that I can work with my files.
-Create files
-Update files
-Must be able to view my files single / many
+- As a signed-in Owner I need to know what my options are so that I can work with my files.  Create files, Update files must be able to view my files single / many
 
 - As an Owner I need to know where my files are stored so that I can CRUD them.
 
 - As an Owner I need to know how to add tags to my files so that I can find them later.
 
 - The app should keep track of :
-date created/uploaded
-date modified
-owner (user who uploaded the file)
-tags
+date created/uploaded,
+date modified,
+owner (user who uploaded the file),
+tags.
 
 VISITOR STORIES:
 ----------------
@@ -69,10 +66,10 @@ TECH USED:
 
 WHATS LEFT:
 -----------
-Working on API web requests
-Working on CRUD requests for Autheticated users
-HTML 
-CSS
+    - Working on API web requests
+    - Working on CRUD requests for Autheticated users
+    - HTML 
+    - CSS
 
 WIREFRAMES:
 -----------

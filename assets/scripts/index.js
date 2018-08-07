@@ -7,12 +7,12 @@
 // require('./example')
 
 const authEvents = require('./auth/events')
-// const fileEvents = require('./files/events.js')
+const fileEvents = require('./files/events.js')
 
 $(() => {
   // your JS code goes here
   authEvents.addAuthHandlers()
-  // fileEvents.addFileHandlers()
+  fileEvents.addFileHandlers()
   // Code to reset modal fields to default upon close…
   $('body').on('hidden.bs.modal', '.modal', function () {
     $(this).find('input[type="text"],input[type="number"],input[type="email"],input[type="password"],textarea,select').each(function () {

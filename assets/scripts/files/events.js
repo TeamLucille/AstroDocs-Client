@@ -21,15 +21,14 @@ const onClearFiles = (event) => {
   ui.clearFiles()
 }
 
-// FINAL CODE FOR ADDING A NEW FILE WILL PROBABLY LOOK MUCH DIFFERENT THAN THIS…
-// const onNewFile = (event) => {
-//   event.preventDefault()
-//   const data = getFormFields(event.target)
-//   api.newFile(data)
-//     .then(ui.newFileSuccess(data))
-//     .then(getFiles)
-//     .catch(ui.failure)
-// }
+const onNewFile = (event) => {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+  api.newFile(data)
+    .then(ui.newFileSuccess(data))
+    .then(getFiles)
+    .catch(ui.failure)
+}
 
 const saveFile = (event) => {
   // Retrieve filele row data on launch of Update File modal…

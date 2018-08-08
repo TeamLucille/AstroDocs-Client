@@ -17,7 +17,7 @@
         <img class="img" src="https://i.imgur.com/xOpLAoT.png" alt="spaceduck">
         </div>
         <div class="title">AstroDocs</div>
-    
+
 
       <main>
        
@@ -33,7 +33,7 @@
         <!-- nav bar -->
         <div class="nav-bar">
           <button class="nav-button" id="nav-show-hide-files">view files</button>
-          <button class="nav-button" id="nav-new-file" data-toggle="modal" data-target="#newFileModal">new file</button>
+          <button class="nav-button" id="nav-new-file" data-toggle="modal" data-target="#newFileModal">upload file</button>
           <button class="nav-button" id="nav-change-password" data-toggle="modal" data-target="#changePasswordModal">change password</button>
           <button class="nav-button" id="nav-sign-out" data-toggle="modal" data-target="#signOutModal">sign out</button>
         </div>
@@ -120,12 +120,11 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modalTitleNewFile">New File</h4>
+            <h4 class="modal-title" id="modalTitleNewFile">Upload File</h4>
             <form id="new-file" class="new-file-panel">
               <fieldset>
-                <input type="text" class="modal-field" name="file[user]" placeholder="User">
-                <input type="text" class="modal-field" name="file[file-name]" placeholder="File">
-                <input type="text" class="modal-field" name="file[date]" placeholder="Date">
+                <input type="file" class="modal-field" name="file[file]" placeholder="File">
+                <input type="text" class="modal-field" name="file[file-name]" placeholder="File Name">
                 <input type="number" class="modal-field" name="file[tags]" placeholder="Tags">
                 <input type="submit" class="new-file-form-button" value="submit">
               </fieldset>

@@ -1,7 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Nova+Square|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Nova+Square|Roboto|Bungee+Inline|');
 
 // Color mixes…
 $thirty-percent-gray: #b3b3b3;
@@ -14,10 +14,68 @@ $blue: #00f;
 $cyan: #0ff;
 $magenta: #f0f;
 $yellow: #ff0;
+$spaceblue: #2697F9;
 
 
 body {
   background-image: url('https://i.imgur.com/0xX79Gm.jpg');
+}
+
+.intro-bar {
+margin: 0 auto;
+text-align: center;
+position: relative;
+bottom: 100px;
+}
+
+.nav-bar {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+
+#nav-sign-up {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
+
+}
+
+#nav-show-hide-files {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
+}
+
+#nav-new-file {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
+}
+
+#nav-change-password {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
+}
+
+#nav-sign-out {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
+}
+
+#nav-sign-in {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 25px;
 }
 
 .block-container {
@@ -38,11 +96,11 @@ body {
 .title {
   font-family: 'Bungee Inline', 'cursive';
   font-size: 80px;
-  color: #1995FC;
-  text-shadow: -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
+  color: $spaceblue;
+  text-shadow: -1px -1px 0 $white,
+        1px -1px 0 $white,
+        -1px 1px 0 $white,
+        1px 1px 0 $white;
         margin-left: 20px;
   position: relative;
   z-index: 1;
@@ -51,9 +109,73 @@ body {
   
 }
 
+.form-button {
+  background-color: $spaceblue;
+  border: 1px solid black;
+  font-family: 'Nova Square';
+  color: $white;
+  text-shadow: -1px -1px 0 $black,
+  1px -1px 0 $black,
+  -1px 1px 0 $black,
+  1px 1px 0 $black;
+}
+
+.new-file-form-button {
+  background-color: $spaceblue;
+  border: 1px solid black;
+  font-family: 'Nova Square';
+  color: $white;
+  text-shadow: -1px -1px 0 $black,
+  1px -1px 0 $black,
+  -1px 1px 0 $black,
+  1px 1px 0 $black;
+}
+
+@-webkit-keyframes animation {
+    0%   {left:0px; top:0px;}
+    25%  {left:900px; top:0px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:900px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+@-webkit-keyframes spin {
+  from { 
+    -moz-transform: rotate(0deg); 
+} to { 
+    -moz-transform: rotate(360deg); 
+}
+}
+
+.ship {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: animation;
+  animation-duration: 6s;
+}
+
+th {
+  text-align: center; 
+}
+
+.info-section {
+  font-family: 'Nova Square', sans-serif;
+  color: $white;
+  text-align: center;
+  text-shadow: -1px -1px 0 $black,
+  1px -1px 0 $black,
+  -1px 1px 0 $black,
+  1px 1px 0 $black;
+
+}
+
 .astrodocs-text {
   font-family: 'Nova Square', sans-serif;
-  color: #fff;
+  color: $white;
+  font-size: 30px;
+  text-align: center;
+  
 }
 
 .modal-title {

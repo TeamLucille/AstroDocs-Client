@@ -15,6 +15,40 @@ $cyan: #0ff;
 $magenta: #f0f;
 $yellow: #ff0;
 
+
+body {
+  background-image: url('https://i.imgur.com/0xX79Gm.jpg');
+}
+
+.block-container {
+  display: inline;
+}
+
+.duck {
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+  margin-left: 5px;
+
+}
+
+h1 {
+  font-family: 'Bungee Inline', 'cursive';
+  font-size: 80px;
+  color: #1995FC;
+  text-shadow: -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+        margin-left: 5px;
+       padding: 0px;
+}
+
+.astrodocs-text {
+  font-family: 'Nova Square', sans-serif;
+  color: #fff;
+}
+
 .modal-title {
   color: $fifty-percent-gray;
   font-family: 'Nova Square', sans-serif;

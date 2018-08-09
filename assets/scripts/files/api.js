@@ -17,7 +17,9 @@ const newFile = function (data) {
   return $.ajax({
     url: config.apiUrl + '/files',
     method: 'POST',
-    data,
+    // data,
+    data: JSON.stringify(data),
+    processData: false,
     headers: {
       Authorization: 'Token token=' + store.user.token
     }

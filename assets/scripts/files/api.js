@@ -13,10 +13,13 @@ const getFiles = function () {
 }
 
 const newFile = function (data) {
+  console.log('API started.')
   return $.ajax({
     url: config.apiUrl + '/files',
     method: 'POST',
-    data,
+    // data,
+    data: JSON.stringify(data),
+    processData: false,
     headers: {
       Authorization: 'Token token=' + store.user.token
     }

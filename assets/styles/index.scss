@@ -15,7 +15,9 @@ $cyan: #0ff;
 $magenta: #f0f;
 $yellow: #ff0;
 $spaceblue: #2697F9;
-
+$spacegreen: #2D908D;
+$spacered: #E01C24;
+$spaceorange: #E55C27;
 
 body {
   background-image: url('https://i.imgur.com/0xX79Gm.jpg');
@@ -133,19 +135,12 @@ bottom: 100px;
 
 @-webkit-keyframes animation {
     0%   {left:0px; top:0px;}
-    25%  {left:900px; top:0px;}
-    50%  {left:0px; top:0px;}
-    75%  {left:900px; top:0px;}
-    100% {left:0px; top:0px;}
+    50%  {left:700px; top:0px;}
+    100%  {left:0px; top:0px;}
+    // 75%  {left:900px; top:0px;}
+    // 100% {left:0px; top:0px;}
 }
 
-@-webkit-keyframes spin {
-  from { 
-    -moz-transform: rotate(0deg); 
-} to { 
-    -moz-transform: rotate(360deg); 
-}
-}
 
 .ship {
   width: 100px;
@@ -153,6 +148,7 @@ bottom: 100px;
   position: relative;
   animation-name: animation;
   animation-duration: 6s;
+  animation-iteration-count: 1;
 }
 
 th {
@@ -179,7 +175,7 @@ th {
 }
 
 .modal-title {
-  color: $fifty-percent-gray;
+  color: $spaceorange;
   font-family: 'Nova Square', sans-serif;
   font-size: 20px;
   margin-bottom: 5px;
@@ -189,11 +185,11 @@ th {
   user-select: none;
 
   &.modal-title-green {
-    color: $green;
+    color: $spacegreen;
   }
 
   &.modal-title-red {
-    color: $red;
+    color: $spacered;
   }
 }
 

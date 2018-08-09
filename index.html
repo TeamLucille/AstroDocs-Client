@@ -121,11 +121,11 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="modalTitleNewFile">Upload File</h4>
-            <form id="new-file" class="new-file-panel">
+            <form id="new-file" enctype="multipart/form-data" accept-charset="utf-8" class="new-file-panel">
               <fieldset>
-                <input type="file" class="modal-field" name="file[file]" placeholder="File">
-                <input type="text" class="modal-field" name="file[file-name]" placeholder="File Name">
-                <input type="number" class="modal-field" name="file[tags]" placeholder="Tags">
+                <input type="file" class="modal-field" name="file" placeholder="File">
+                <input type="text" class="modal-field" name="fileName" placeholder="File Name">
+                <input type="text" class="modal-field" name="tags" placeholder="Tags">
                 <input type="submit" class="new-file-form-button" value="submit">
               </fieldset>
             </form>
@@ -140,12 +140,11 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="modalTitleModifyFile">Modify File</h4>
-            <form id="update-file" class="update-file-panel">
+            <form id="update-file" enctype="multipart/form-data" class="update-file-panel">
               <fieldset>
-                <input type="text" class="modal-field" id="modal-field-user" name="file[user]" placeholder="User">
-                <input type="text" class="modal-field" id="modal-field-file-name" name="file[file-name]" placeholder="File">
-                <input type="text" class="modal-field" id="modal-field-date" name="file[date]" placeholder="Date">
-                <input type="number" class="modal-field" id="modal-field-tags" name="file[tags]" placeholder="Tags">
+                <input type="file" class="modal-field" id="modal-field-file" name="file" placeholder="File">
+                <input type="text" class="modal-field" id="modal-field-file-name" name="fileName" placeholder="File Name">
+                <input type="text" class="modal-field" id="modal-field-tags" name="tags" placeholder="Tags">
                 <input type="submit" class="new-file-form-button" value="submit">
               </fieldset>
             </form>

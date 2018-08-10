@@ -21,39 +21,43 @@ const onClearFiles = (event) => {
   ui.clearFiles()
 }
 
-// FINAL CODE FOR ADDING A NEW FILE WILL PROBABLY LOOK MUCH DIFFERENT THAN THIS…
-// const onNewFile = (event) => {
-//   event.preventDefault()
-//   const data = getFormFields(event.target)
-//   api.newFile(data)
-//     .then(ui.newFileSuccess(data))
-//     .then(getFiles)
-//     .catch(ui.failure)
-// }
+// This function launches after attaching file in modal, \
+// then entering text inputs and clicking modal submit button.
+const onNewFile = (event) => {
+  event.preventDefault()
+  console.log('Modal loaded.')
+  const data = new FormData(event.target)
+  api.newFile(data)
+    .then(console.log('API happened.'))
+    .then(console.log(data))
+    .then(ui.newFileSuccess(data))
+    .then(getFiles)
+    .catch(ui.failure)
+}
 
+// Retrieve file row data on launch of Update File modal…
 const saveFile = (event) => {
-  // Retrieve filele row data on launch of Update File modal…
   store.file = {
     file_id: $(event.target).closest('tr').attr('data-id'),
     user: $(event.target).closest('tr').attr('data-user'),
-    file_name: $(event.target).closest('tr').attr('data-project_name'),
+    file_name: $(event.target).closest('tr').attr('data-file-name'),
     date: $(event.target).closest('tr').attr('data-date'),
     tags: $(event.target).closest('tr').attr('data-tags')
   }
   fillField()
 }
 
+// Reset form fields on launch of Update File modal…
 const fillField = () => {
-  // Reset form fields on launch of Update File modal…
   $('#update-file').show()
-  $('#modal-field-user').val(store.file.user)
-  $('#modal-field-file-name').val(store.file.file_name)
-  $('#modal-field-date').val(store.file.date)
+  $('#modal-field-file').val(store.file)
+  $('#modal-field-file-name').val(store.file.fileName)
   $('#modal-field-tags').val(store.file.tags)
 }
 
+// This function launches after attaching file in modal, \
+// then entering text inputs and clicking modal submit button.
 const onUpdateFile = (event) => {
-  // On clicking submit button after updating file…
   event.preventDefault()
   const data = getFormFields(event.target)
   api.updateFile(data, store.file.file_id)
@@ -88,7 +92,7 @@ const addFileHandlers = () => {
   })
 
   $('.info-section').hide()
-  // $('#new-file').on('submit', onNewFile)
+  $('#new-file').on('submit', onNewFile)
   $('#update-file').on('submit', onUpdateFile)
   $('#delete-file').on('submit', onDeleteFile)
 }

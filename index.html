@@ -1,17 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>AstroDocs</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+        <div class="duck">
+        <img class="img" src="/images/astroduck_iconnew.png" alt="spaceduck">
+        </div>
+        <div class="title">AstroDocs</div>
+
+
+      <main>
+
+        <header>
+          <div class="astrodocs-text">View files!  Log in!  Upload Your Own!  Share!  Collaborate! </div>
+        </header>
+
+        <!-- intro bar -->
+        <div class="intro-bar">
+          <button class="nav-button" id="nav-sign-up" data-toggle="modal" data-target="#signUpModal">sign up</button>
+          <button class="nav-button" id="nav-sign-in" data-toggle="modal" data-target="#signInModal">sign in</button>
+        </div>
+        <!-- nav bar -->
+        <div class="nav-bar">
+          <button class="nav-button" id="nav-show-hide-files">view files</button>
+          <button class="nav-button" id="nav-new-file" data-toggle="modal" data-target="#newFileModal">upload file</button>
+          <button class="nav-button" id="nav-change-password" data-toggle="modal" data-target="#changePasswordModal">change password</button>
+          <button class="nav-button" id="nav-sign-out" data-toggle="modal" data-target="#signOutModal">sign out</button>
+        </div>
+
+        <!-- info section -->
+        <section class="info-section">
+            <table>
+              <thead>
+                <tr>
+                  <th class="user-th">User</th>
+                  <th class="file-name-th">File</th>
+                  <th class="date-th">Date</th>
+                  <th class="date-tags">Tags</th>
+                  <th class="modify-th">Modify</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr><!-- Possible footer info here --></tr>
+              </tfoot>
+              <tbody id="file-return-content" class="file-return-content">
+                <!-- Files called from API will populate here -->
+              </tbody>
+            </table>
+          <div class="credits"><span>Developed by Team Lucille in 2018.</span></div>
+        </section>
+
+      <!-- Sign Up Modal Begins -->
+      <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleSignUp">Sign Up</h4>
+            <form id="sign-up" class="sign-up-panel">
+              <fieldset>
+                <input type="email" name="credentials[email]" placeholder="Email" autocomplete="on">
+                <input type="password" name="credentials[password]" placeholder="Password" autocomplete="off">
+                <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password" autocomplete="off">
+                <input type="submit" class="form-button" value="submit">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Sign Up Modal Ends -->
+
+      <!-- Sign In Modal Begins -->
+      <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleSignIn">Sign In</h4>
+            <form id="sign-in" class="sign-in-panel">
+              <fieldset>
+                <input type="email" name="credentials[email]" placeholder="Email" autocomplete="on">
+                <input type="password" name="credentials[password]" placeholder="Password" autocomplete="off">
+                <input type="submit" class="form-button" value="submit">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Sign In Modal Ends -->
+
+      <!-- Change Password Modal Begins -->
+      <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleChangePassword">Change Password</h4>
+            <form id="change-password" class="change-password-panel">
+              <fieldset>
+                <input type="password" name="passwords[old]" placeholder="Old Password" autocomplete="off">
+                <input type="password" name="passwords[new]" placeholder="New Password" autocomplete="off">
+                <input type="submit" class="form-button" value="submit">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Change Password Modal Ends -->
+
+      <!-- New File Modal Begins -->
+      <div class="modal fade" id="newFileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleNewFile">Upload File</h4>
+            <form id="new-file" enctype="multipart/form-data" accept-charset="utf-8" class="new-file-panel">
+              <fieldset>
+                <input type="file" class="modal-field" name="file" placeholder="File" autocomplete="off">
+                <input type="text" class="modal-field" name="title" placeholder="Title" autocomplete="off">
+                <input type="text" class="modal-field" name="tags" placeholder="Tags" autocomplete="off">
+                <input type="submit" class="new-file-form-button" value="submit">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- New File Modal Ends -->
+
+      <!-- Modify File Modal Begins -->
+      <div class="modal fade" id="modifyFileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleModifyFile">Modify File</h4>
+            <form id="update-file" enctype="multipart/form-data" class="update-file-panel">
+              <fieldset>
+                <input type="text" class="modal-field" id="modal-field-file-name" name="title" placeholder="Title">
+                <input type="text" class="modal-field" id="modal-field-tags" name="tags" placeholder="Tags">
+                <input type="submit" class="new-file-form-button" value="submit">
+              </fieldset>
+            </form>
+            <form id="delete-file" class="delete-file-panel">
+              <fieldset>
+                <input type="submit" class="delete-file-form-button" value="delete file">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Modify File Modal Ends -->
+
+      <!-- Sign Out Modal Begins -->
+      <div class="modal fade" id="signOutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalTitleSignOut">Sign Out</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Sign Out Modal Ends -->
+      <div class="ship">
+          <img class="animation" src="/images/new ship.png">
+        </div>
+
+      </main>
     </body>
 </html>

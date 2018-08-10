@@ -1,4 +1,4 @@
-WDI-PVD-03 GROUP PROJECT - ASTRODOCS
+WDI-PVD-03 GROUP PROJECT - ASTRODOCS-CLIENT
 =====================================
 
 ASTRODOCS
@@ -70,6 +70,7 @@ WHATS LEFT
     - Working on CRUD requests for Autheticated users
     - HTML 
     - CSS
+
 
 WIREFRAMES
 -----------

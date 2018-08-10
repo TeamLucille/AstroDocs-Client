@@ -95,6 +95,13 @@ bottom: 100px;
   
 }
 
+.mars {
+  position: relative;
+  z-index: auto;
+  top: -100px;
+  right: -600px;
+}
+
 .title {
   font-family: 'Bungee Inline', 'cursive';
   font-size: 80px;
@@ -163,7 +170,24 @@ th {
   1px -1px 0 $black,
   -1px 1px 0 $black,
   1px 1px 0 $black;
+  margin: 0 auto;
 
+}
+
+.file-headers {
+  font-size: 30px;
+}
+
+.file-info {
+  font-size: 20px;
+}
+
+.modify {
+  background-color: $spaceblue;
+  border: 1px solid white;
+  font-family: 'Nova Square';
+  font-size: 20px;
+  color: $black;
 }
 
 .astrodocs-text {

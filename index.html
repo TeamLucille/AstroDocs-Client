@@ -20,7 +20,7 @@
 
 
       <main>
-       
+
         <header>
           <div class="astrodocs-text">View files!  Log in!  Upload Your Own!  Share!  Collaborate! </div>
         </header>
@@ -123,9 +123,9 @@
             <h4 class="modal-title" id="modalTitleNewFile">Upload File</h4>
             <form id="new-file" enctype="multipart/form-data" accept-charset="utf-8" class="new-file-panel">
               <fieldset>
-                <input type="file" class="modal-field" name="file" placeholder="File">
-                <input type="text" class="modal-field" name="fileName" placeholder="File Name">
-                <input type="text" class="modal-field" name="tags" placeholder="Tags">
+                <input type="file" class="modal-field" name="file" placeholder="File" autocomplete="off">
+                <input type="text" class="modal-field" name="title" placeholder="Title" autocomplete="off">
+                <input type="text" class="modal-field" name="tags" placeholder="Tags" autocomplete="off">
                 <input type="submit" class="new-file-form-button" value="submit">
               </fieldset>
             </form>
@@ -142,8 +142,7 @@
             <h4 class="modal-title" id="modalTitleModifyFile">Modify File</h4>
             <form id="update-file" enctype="multipart/form-data" class="update-file-panel">
               <fieldset>
-                <input type="file" class="modal-field" id="modal-field-file" name="file" placeholder="File">
-                <input type="text" class="modal-field" id="modal-field-file-name" name="fileName" placeholder="File Name">
+                <input type="text" class="modal-field" id="modal-field-file-name" name="title" placeholder="Title">
                 <input type="text" class="modal-field" id="modal-field-tags" name="tags" placeholder="Tags">
                 <input type="submit" class="new-file-form-button" value="submit">
               </fieldset>

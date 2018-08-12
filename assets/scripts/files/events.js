@@ -87,8 +87,8 @@ const addFileHandlers = () => {
 
   // TEMPORARY CODE FOR SHOWING INFO SECTION TABLE WITHOUT API DATA…
   $('#nav-show-hide-files').click((event) => {
-    store.showHideCounter % 2 === 0 ? $('.info-section').show() : $('.info-section').hide()
-    store.showHideCounter++
+    store.showHideCounter === true ? $('.info-section').show() : $('.info-section').hide()
+    store.showHideCounter === true ? store.showHideCounter = false : store.showHideCounter = true
   })
 
   $('.info-section').hide()

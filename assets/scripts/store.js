@@ -1,7 +1,7 @@
 'use strict'
 
 const store = {
-  showHideCounter: 0,
+  showHideCounter: true,
   successTimeout: 1500,
   failureTimeout: 3000,
   successMessageColor: () => {

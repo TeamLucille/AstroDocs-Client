@@ -4,6 +4,7 @@ const config = require('../config')
 const store = require('../store')
 
 const signUp = function (data) {
+  console.log(`AJAX start`)
   return $.ajax({
     url: config.apiUrl + '/sign-up',
     method: 'POST',

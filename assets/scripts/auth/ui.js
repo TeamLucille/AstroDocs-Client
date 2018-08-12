@@ -9,6 +9,7 @@ const signUpSuccess = function (data) {
   setTimeout(function () {
     $('#signUpModal').modal('hide')
     $('#modalTitleSignUp').text('Sign up')
+    $('#sign-up').show()
     store.defaultMessageColor()
     $('#signInModal').modal('show')
   }, store.successTimeout)
@@ -82,7 +83,7 @@ const signOutSuccess = function (data) {
   $('.info-section').hide()
   $('.nav-bar').hide()
   $('.intro-bar').show()
-  store.showHideCounter = 0
+  store.showHideCounter = true
 
   setTimeout(function () {
     $('#signOutModal').modal('hide')
